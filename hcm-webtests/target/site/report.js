@@ -9,54 +9,10 @@ formatter.feature({
     }
   ]
 });
-formatter.scenarioOutline({
-  "name": "Realizar Admissão de um Colaborador",
-  "description": "",
-  "keyword": "Esquema do Cenário"
-});
-formatter.step({
-  "name": "que usuário possa acessar a tela de login do sistema",
-  "keyword": "Dado "
-});
-formatter.step({
-  "name": "informar um usuário\u003cUsuario\u003e",
-  "keyword": "Quando "
-});
-formatter.step({
-  "name": "inserir uma senha \u003cSenha\u003e",
-  "keyword": "E "
-});
-formatter.step({
-  "name": "selecionar o botão entrar",
-  "keyword": "E "
-});
-formatter.step({
-  "name": "o Menu Principal é exibido",
-  "keyword": "Então "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Exemplos",
-  "rows": [
-    {
-      "cells": [
-        "Usuario",
-        "Senha"
-      ]
-    },
-    {
-      "cells": [
-        "\"integration.hcm\"",
-        "\"Int2017@mdb\""
-      ]
-    }
-  ]
-});
 formatter.scenario({
   "name": "Realizar Admissão de um Colaborador",
   "description": "",
-  "keyword": "Esquema do Cenário",
+  "keyword": "Cenário",
   "tags": [
     {
       "name": "@login"
@@ -74,21 +30,21 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "informar um usuário\"integration.hcm\"",
+  "name": "informar um usuário",
   "keyword": "Quando "
 });
 formatter.match({
-  "location": "RealizarAdmissaoSteps.informarUmUsuário(String)"
+  "location": "RealizarAdmissaoSteps.informar_um_usuário()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "inserir uma senha \"Int2017@mdb\"",
+  "name": "inserir uma senha",
   "keyword": "E "
 });
 formatter.match({
-  "location": "RealizarAdmissaoSteps.inserir_uma_senha(String)"
+  "location": "RealizarAdmissaoSteps.inserir_uma_senha()"
 });
 formatter.result({
   "status": "passed"

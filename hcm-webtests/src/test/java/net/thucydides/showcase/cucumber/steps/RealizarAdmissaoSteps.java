@@ -7,11 +7,13 @@ import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import net.thucydides.showcase.cucumber.pages.AdmissaoPage;
 import net.thucydides.showcase.cucumber.pages.HomePage;
+import net.thucydides.showcase.cucumber.util.LoginArquivo;
 
 public class RealizarAdmissaoSteps {
 
 	HomePage homePage;
 	AdmissaoPage admissaoPage;
+	LoginArquivo loginArquivo = new LoginArquivo();
 
 	@Dado("^que usuário possa acessar a tela de login do sistema$")
 	public void que_usuário_possa_acessar_a_tela_de_login_do_sistema() throws IOException {
@@ -19,16 +21,15 @@ public class RealizarAdmissaoSteps {
 		homePage.acessar();
 	}
 
-	@Quando("^informar um usuário\"([^\"]*)\"$")
-	public void informarUmUsuário(String usuario) throws IOException {
-
-		admissaoPage.digitarUsuario(usuario);
+	@Quando("^informar um usuário$")
+	public void informar_um_usuário() throws IOException {
+		loginArquivo.Ler();
+		admissaoPage.digitarUsuario(loginArquivo.getUsuario());
 	}
 
-	@Quando("^inserir uma senha \"([^\"]*)\"$")
-	public void inserir_uma_senha(String senha) {
-
-		admissaoPage.digitarSenha(senha);
+	@Quando("^inserir uma senha$")
+	public void inserir_uma_senha() {
+		admissaoPage.digitarSenha(loginArquivo.getSenha());
 	}
 
 	@Quando("^selecionar o botão entrar$")
@@ -290,13 +291,11 @@ public class RealizarAdmissaoSteps {
 		admissaoPage.digitarCategoriaColaborador();
 
 	}
-	
+
 	@Quando("^pressionar   submeter$")
 	public void pressionar_submeter() {
-	   	admissaoPage.selecionarSubmeter();
+		admissaoPage.selecionarSubmeter();
 	}
-
-
 
 	@Então("^digitar periodo de experiencia$")
 	public void digitarPeriodoDeExperiencia() {
