@@ -1,0 +1,10 @@
+net\thucydides\showcase\cucumber\AdmissaoTeste.class
+net\thucydides\showcase\cucumber\steps\Agregada.class
+net\thucydides\showcase\cucumber\pages\AdmissaoPage.class
+net\thucydides\showcase\cucumber\pages\HomePage.class
+net\thucydides\showcase\cucumber\steps\TabelaAgregada.class
+net\thucydides\showcase\cucumber\pages\BasePage.class
+net\thucydides\showcase\cucumber\steps\ConexaoOracle.class
+net\thucydides\showcase\cucumber\steps\SomarSteps.class
+net\thucydides\showcase\cucumber\steps\RealizarAdmissaoSteps.class
+net\thucydides\showcase\cucumber\util\LerArquivo.class
