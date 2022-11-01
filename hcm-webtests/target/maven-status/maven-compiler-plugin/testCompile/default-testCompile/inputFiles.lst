@@ -1,10 +1,7 @@
 C:\automação\poc_automacao\hcm-webtests\src\test\java\net\thucydides\showcase\cucumber\steps\RealizarAdmissaoSteps.java
-C:\automação\poc_automacao\hcm-webtests\src\test\java\net\thucydides\showcase\cucumber\steps\ConexaoOracle.java
 C:\automação\poc_automacao\hcm-webtests\src\test\java\net\thucydides\showcase\cucumber\pages\AdmissaoPage.java
 C:\automação\poc_automacao\hcm-webtests\src\test\java\net\thucydides\showcase\cucumber\pages\BasePage.java
 C:\automação\poc_automacao\hcm-webtests\src\test\java\net\thucydides\showcase\cucumber\util\LerArquivo.java
 C:\automação\poc_automacao\hcm-webtests\src\test\java\net\thucydides\showcase\cucumber\AdmissaoTeste.java
 C:\automação\poc_automacao\hcm-webtests\src\test\java\net\thucydides\showcase\cucumber\pages\HomePage.java
-C:\automação\poc_automacao\hcm-webtests\src\test\java\net\thucydides\showcase\cucumber\steps\Agregada.java
-C:\automação\poc_automacao\hcm-webtests\src\test\java\net\thucydides\showcase\cucumber\steps\SomarSteps.java
-C:\automação\poc_automacao\hcm-webtests\src\test\java\net\thucydides\showcase\cucumber\steps\TabelaAgregada.java
+C:\automação\poc_automacao\hcm-webtests\src\test\java\net\thucydides\showcase\cucumber\util\LoginArquivo.java
