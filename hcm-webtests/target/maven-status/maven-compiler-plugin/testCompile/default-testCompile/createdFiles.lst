@@ -1,7 +1,6 @@
-net\thucydides\showcase\cucumber\AdmissaoTeste.class
-net\thucydides\showcase\cucumber\pages\AdmissaoPage.class
-net\thucydides\showcase\cucumber\pages\HomePage.class
+net\thucydides\showcase\cucumber\RunTest.class
+net\thucydides\showcase\cucumber\pages\PedidoPage.class
+net\thucydides\showcase\cucumber\steps\MercanetSteps.class
 net\thucydides\showcase\cucumber\pages\BasePage.class
-net\thucydides\showcase\cucumber\steps\RealizarAdmissaoSteps.class
 net\thucydides\showcase\cucumber\util\LoginArquivo.class
 net\thucydides\showcase\cucumber\util\LerArquivo.class

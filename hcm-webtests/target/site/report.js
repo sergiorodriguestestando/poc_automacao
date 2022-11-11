@@ -1,21 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/admissao/RealizarAdmissao.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/mercanet/pedido.feature");
 formatter.feature({
-  "name": "Realizar Admissão de um nono colocaborador",
-  "description": "Como usuário do perfil Gestor\nEu quero informar os dados obrigatórios\nE cadastrar um novo colaborador",
+  "name": "Realizar login no sistema",
+  "description": "Como usuário do perfil gestor\nEu quero realizar um pedido",
   "keyword": "Funcionalidade",
   "tags": [
     {
-      "name": "@login"
+      "name": "@pedido"
     }
   ]
 });
 formatter.scenario({
-  "name": "Realizar Admissão de um Colaborador",
+  "name": "Realizar pedido de venda",
   "description": "",
   "keyword": "Cenário",
   "tags": [
     {
-      "name": "@login"
+      "name": "@pedido"
     }
   ]
 });
@@ -24,7 +24,7 @@ formatter.step({
   "keyword": "Dado "
 });
 formatter.match({
-  "location": "RealizarAdmissaoSteps.que_usuário_possa_acessar_a_tela_de_login_do_sistema()"
+  "location": "MercanetSteps.que_usuário_possa_acessar_a_tela_de_login_do_sistema()"
 });
 formatter.result({
   "status": "passed"
@@ -34,7 +34,7 @@ formatter.step({
   "keyword": "Quando "
 });
 formatter.match({
-  "location": "RealizarAdmissaoSteps.informar_um_usuário()"
+  "location": "MercanetSteps.informar_um_usuário()"
 });
 formatter.result({
   "status": "passed"
@@ -44,27 +44,97 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "RealizarAdmissaoSteps.inserir_uma_senha()"
+  "location": "MercanetSteps.inserir_uma_senha()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "selecionar o botão entrar",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "RealizarAdmissaoSteps.selecionar_o_botão_entrar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "o Menu Principal é exibido",
+  "name": "menu principal é exibido",
   "keyword": "Então "
 });
 formatter.match({
-  "location": "RealizarAdmissaoSteps.oMenuPrincipalÉExibido()"
+  "location": "MercanetSteps.menu_principal_é_exibido()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "selecionar um novo pedido",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "MercanetSteps.selecionar_um_novo_pedido()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "selecionar um cliente",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "MercanetSteps.selecionar_um_cliente()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "selecionar um preco",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "MercanetSteps.selecionar_um_preco()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "selecionar uma condicao de pagamento",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "MercanetSteps.selecionar_uma_condicao_de_pagamento()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "selecionar um produto",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "MercanetSteps.selecionar_um_produto()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "selecionar uma quantidade",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "MercanetSteps.selecionar_uma_quantidade()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "selecionar o botao salvar",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "MercanetSteps.selecionar_o_botao_salvar()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "a mensagem de sucesso é exibida",
+  "keyword": "Então "
+});
+formatter.match({
+  "location": "MercanetSteps.a_mensagem_de_sucesso_é_exibida()"
 });
 formatter.result({
   "status": "passed"
