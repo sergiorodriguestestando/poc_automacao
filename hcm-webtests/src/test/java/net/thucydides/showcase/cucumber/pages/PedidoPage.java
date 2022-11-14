@@ -23,17 +23,49 @@ public class PedidoPage extends BasePage {
 	@FindBy(id = "btnEntrarNovoNL")
 	WebElementFacade btnEntrar;
 
+	@FindBy(id = "txtPesquisar")
+	WebElementFacade inputPesquisa;
+	
 	@FindBy(id = "iconeMenuWrapper")
 	WebElementFacade menuPrincipal;
 
 	@FindBy(xpath = "//h2[text()='Pedidos']")
 	WebElementFacade menuPedido;
 
-	@FindBy(xpath = "//h2[text()='Pedido']")
+	@FindBy(xpath = "//h2[text()='Pedidos']")
 	WebElementFacade SubMenuPedido;
+	
+	@FindBy(xpath = "//h2[text()='Pedidos EDI']")
+	WebElementFacade SubMenuPedidoEdi;
+	
+	@FindBy(id = "ctl00_ctl00_PageContentPlaceHolder_PageContentPlaceHolder_grdLista_DXFREditorcol3_I")
+	WebElementFacade inputPedidoEdi;
+	
+	@FindBy(xpath = "//div[@id='ctl00_ctl00_PageContentPlaceHolder_AvancadoContentPlaceHolder_actPesquisar']")
+	WebElementFacade btnPesquisaPedidoEdi;
+	
+	
+	
+	@FindBy(xpath = "//input[@id='ctl00_ctl00_PageContentPlaceHolder_AvancadoContentPlaceHolder_cboData_I']")
+	WebElementFacade tipoPedido;
+	
+	@FindBy(id = "ctl00_ctl00_PageContentPlaceHolder_AvancadoContentPlaceHolder_dtpDataInicial_I")
+	WebElementFacade dtInicioPedido;
+	
+	
+	
+	
+	ByXPath listaPedidosEdi = (ByXPath) By.xpath("//td[@style='border-bottom-width:0px;']");
+
+	
+	
+	//ctl00_ctl00_PageContentPlaceHolder_PageContentPlaceHolder_grdLista_DXFREditorcol3_I
 
 	String framePrincipal = "tab--Consultas-PedidoDeVendaRedirect-aspx";
 	String frameSecundario = "tab--Cadastros-PedidoVenda-PedidoRedirect-aspx";
+	String framePedidoEdi = "tab--Consultas-EDI-ConsPedidoEDI-aspx";
+	
+	
 
 	@FindBy(id = "ctl00_ctl00_mbuToolbar_DXI0_")
 	WebElementFacade btnNovo;
@@ -83,6 +115,8 @@ public class PedidoPage extends BasePage {
 		List<WebElement> results = getDriver().findElements(listaClientes2);
 		return results;
 	}
+	
+
 
 	public void digitarUsuario(String usuario) {
 
@@ -113,6 +147,22 @@ public class PedidoPage extends BasePage {
 	public void clicarMenuPrincipal() {
 		menuPrincipal.click();
 	}
+	
+	public void pesquisarMenu() {
+		escrever(inputPesquisa, "Pedidos EDI");
+	}
+	
+	public void selecionarTipoPedido() {
+		tipoPedido.click();
+		setaParaBaixo(tipoPedido);
+		pressionarEnter(tipoPedido);
+	}
+	
+	public void selecionarDataInicial() {
+		dtInicioPedido.click();
+	//	escrever(dtInicioPedido, "01/11");
+	}
+
 
 	public void clicarMenuPedido() {
 		menuPedido.click();
@@ -121,6 +171,18 @@ public class PedidoPage extends BasePage {
 	public void clicarSubMenuPedido() {
 		SubMenuPedido.click();
 	}
+	
+	public void selecionarrSubMenuPedidoEdi() {
+		
+		clicar(SubMenuPedidoEdi);
+	}
+	
+	public void digitarPedidoEdi(String pedidoEdi) {
+		escrever(inputPedidoEdi, pedidoEdi);
+		tempos();
+		tempos();
+	}
+
 
 	public void clicarBotaoNovo() {
 		btnNovo.click();
@@ -128,6 +190,10 @@ public class PedidoPage extends BasePage {
 
 	public void frameP() {
 		entrarFrame(framePrincipal);
+	}
+	
+	public void framePedidoEdi() {
+		entrarFrame(framePedidoEdi);
 	}
 
 	public void frameS() {
@@ -145,12 +211,27 @@ public class PedidoPage extends BasePage {
 	public void clicarBtnPesquisar() {
 		btnPesquisar.click();
 	}
+	
+	public void clicarBtnPesquisarPedidoEdi() {
+		btnPesquisaPedidoEdi.click();
+	}
 
 	public void buscarElementos() {
 		List<WebElement> lista = listaElementos(listaClientes);
 		for (WebElement webElement : lista) {
 			webElement.click();
 		}
+	}
+	
+	
+	public String verificarPedidosEdi(String pedido) {
+		List<WebElement> lista = listaElementos(listaPedidosEdi);
+		String pedidoEdi = "";
+		for (WebElement webElement : lista) {
+			if(webElement.getText().equals(pedido))
+			pedidoEdi = webElement.getText();
+		}
+		return pedidoEdi;
 	}
 
 	public void clicarBtnSelecionar() {

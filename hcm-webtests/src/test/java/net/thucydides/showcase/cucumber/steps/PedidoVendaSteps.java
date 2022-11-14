@@ -8,7 +8,7 @@ import cucumber.api.java.pt.Quando;
 import net.thucydides.showcase.cucumber.pages.PedidoPage;
 import net.thucydides.showcase.cucumber.util.LoginArquivo;
 
-public class MercanetSteps {
+public class PedidoVendaSteps {
 
 	PedidoPage pedidoPage;
 	LoginArquivo loginArquivo = new LoginArquivo();
@@ -32,12 +32,16 @@ public class MercanetSteps {
 	
 	
 	@Então("^menu principal é exibido$")
-	public void menu_principal_é_exibido() {
+	public void menu_principal_é_exibido() { 
 		pedidoPage.clicarBtnEntrar();
 		pedidoPage.clicarMenuPrincipal();
-		pedidoPage.clicarMenuPedido();
-		pedidoPage.clicarSubMenuPedido();
-		pedidoPage.frameP();
+	//	pedidoPage.clicarMenuPedido();
+		pedidoPage.pesquisarMenu();
+	//	pedidoPage.clicarSubMenuPedido();
+		pedidoPage.selecionarrSubMenuPedidoEdi();
+		pedidoPage.framePedidoEdi();
+		pedidoPage.digitarPedidoEdi("39393901");
+		pedidoPage.clicarBtnPesquisarPedidoEdi();
 		
 		boolean valor = pedidoPage.elementoEstaPresente();
 		

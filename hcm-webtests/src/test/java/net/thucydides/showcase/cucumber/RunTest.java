@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = "src/test/resources/features/mercanet/pedido.feature", 
+@CucumberOptions(features = "src/test/resources/features/mercanet/pedido_edi.feature",
 plugin= {"pretty","html:target/site"},
 monochrome = true, 
 dryRun = false,
@@ -17,5 +17,4 @@ glue = "net.thucydides.showcase.cucumber.steps"
 public class RunTest {
 
 }
-
 
