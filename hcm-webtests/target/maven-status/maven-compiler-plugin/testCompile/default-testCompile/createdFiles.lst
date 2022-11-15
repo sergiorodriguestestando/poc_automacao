@@ -1,6 +1,9 @@
+net\thucydides\showcase\cucumber\steps\PedidoEdiSteps.class
+net\thucydides\showcase\cucumber\util\mdb_b2bbic.class
+net\thucydides\showcase\cucumber\RunTest.class
 net\thucydides\showcase\cucumber\pages\PedidoPage.class
-net\thucydides\showcase\cucumber\steps\MercanetSteps.class
+net\thucydides\showcase\cucumber\util\ConexaoOracle.class
+net\thucydides\showcase\cucumber\steps\PedidoVendaSteps.class
 net\thucydides\showcase\cucumber\pages\BasePage.class
 net\thucydides\showcase\cucumber\util\LoginArquivo.class
 net\thucydides\showcase\cucumber\util\LerArquivo.class
-net\thucydides\showcase\cucumber\RunTest.class
