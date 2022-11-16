@@ -14,25 +14,24 @@ public class PedidoEdiSteps {
 
 	PedidoPage pedidoPage;
 	LoginArquivo loginArquivo = new LoginArquivo();
+	String pedidoEdi = "857680037";
 
 	@Quando("^pesquisar por um pedido edi$")
 	public void pesquisar_por_um_pedido_edi() {
 		pedidoPage.clicarBtnEntrar();
 		pedidoPage.clicarMenuPrincipal();
 		pedidoPage.pesquisarMenu();
-		pedidoPage.selecionarrSubMenuPedidoEdi();	
+		pedidoPage.selecionarrSubMenuPedidoEdi();
+	}
+
+	@Então("^o pedido é exibido$")
+	public void o_pedido_é_exibido() {
 		pedidoPage.framePedidoEdi();
 		pedidoPage.selecionarDataInicial();
 		pedidoPage.selecionarTipoPedido();
 		pedidoPage.clicarBtnPesquisarPedidoEdi();
-		pedidoPage.digitarPedidoEdi("52525201");
-		Assert.assertEquals(pedidoPage.verificarPedidosEdi("52525201"), "52525201");
+		pedidoPage.digitarPedidoEdi(pedidoEdi);
+		Assert.assertEquals(pedidoPage.verificarPedidosEdi(pedidoEdi), pedidoEdi);
 	}
-	
-	@Então("^o pedido é exibido$")
-	public void o_pedido_é_exibido() {
-	   
-	}
-
 
 }
