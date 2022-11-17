@@ -108,6 +108,12 @@ public class PedidoPage extends BasePage {
 	
 	@FindBy(xpath = "//label[text()='Atualizar pedido']")
 	WebElementFacade btnAtualizar;
+	
+	@FindBy(id = "iconeUserInfo")
+	WebElementFacade usuarioLogado;
+	
+	@FindBy(id = "btnSair")
+	WebElementFacade btnSair;
 
 
 
@@ -150,6 +156,10 @@ public class PedidoPage extends BasePage {
 	
 	public void pesquisarMenu() {
 		escrever(inputPesquisa, "Pedidos EDI");
+	}
+	
+	public void pesquisarMenuPedido() {
+		escrever(inputPesquisa, "Pedidos");
 	}
 	
 	public void selecionarTipoPedido() {
@@ -260,7 +270,7 @@ public class PedidoPage extends BasePage {
 	}
 	
 	public void selecionarProduto() {
-		escrever(produto, "11012");
+		escrever(produto, "10006");
 		tempos();
 		tempos();
 		setaParaBaixo(produto);
@@ -278,6 +288,12 @@ public class PedidoPage extends BasePage {
 	public void selecionarBtnAtaulizar() {
 		btnAtualizar.click();
 	}
+	
+	public void sairSistena() {
+		usuarioLogado.click();
+		btnSair.click();
+	}
+	
 	
 	
 	

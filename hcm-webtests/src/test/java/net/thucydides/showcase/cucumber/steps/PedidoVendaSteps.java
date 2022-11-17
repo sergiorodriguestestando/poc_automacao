@@ -35,13 +35,15 @@ public class PedidoVendaSteps {
 	public void menu_principal_é_exibido() { 
 		pedidoPage.clicarBtnEntrar();
 		pedidoPage.clicarMenuPrincipal();
-	//	pedidoPage.clicarMenuPedido();
-		pedidoPage.pesquisarMenu();
-	//	pedidoPage.clicarSubMenuPedido();
-		pedidoPage.selecionarrSubMenuPedidoEdi();
-		pedidoPage.framePedidoEdi();
-		pedidoPage.digitarPedidoEdi("39393901");
-		pedidoPage.clicarBtnPesquisarPedidoEdi();
+		pedidoPage.pesquisarMenuPedido();
+		//pedidoPage.clicarMenuPedido();
+		
+		pedidoPage.clicarSubMenuPedido();
+		//pedidoPage.selecionarrSubMenuPedidoEdi();
+		//pedidoPage.framePedidoEdi();
+		//pedidoPage.digitarPedidoEdi("39393901");
+		//pedidoPage.clicarBtnPesquisarPedidoEdi();
+		pedidoPage.frameP();
 		
 		boolean valor = pedidoPage.elementoEstaPresente();
 		
@@ -108,12 +110,19 @@ public class PedidoVendaSteps {
 
 	@Quando("^selecionar o botao salvar$")
 	public void selecionar_o_botao_salvar() {
-	 
+		//pedidoPage.selecionarBtnAtaulizar();
+		pedidoPage.sairFrame();
+		
 	}
 
 	@Então("^a mensagem de sucesso é exibida$")
 	public void a_mensagem_de_sucesso_é_exibida() {
 	 
+	}
+	@Então("^sair do sistema$")
+	public void sair_do_sistema() {
+		pedidoPage.sairFrame();
+		pedidoPage.sairSistena(); 
 	}
 
 //	@Quando("^selecionar o botão entrar$")

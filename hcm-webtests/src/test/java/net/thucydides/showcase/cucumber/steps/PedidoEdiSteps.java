@@ -1,10 +1,7 @@
 package net.thucydides.showcase.cucumber.steps;
 
-import java.io.IOException;
-
 import org.junit.Assert;
 
-import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import net.thucydides.showcase.cucumber.pages.PedidoPage;

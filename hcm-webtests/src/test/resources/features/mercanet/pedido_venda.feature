@@ -22,6 +22,7 @@ E selecionar um produto
 E selecionar uma quantidade
 Quando selecionar o botao salvar
 Então a mensagem de sucesso é exibida
+E sair do sistema
 
 
 

@@ -15,3 +15,4 @@ Quando informar um usuário
 E inserir uma senha
 E pesquisar por um pedido edi
 Então o pedido é exibido
+E sair do sistema

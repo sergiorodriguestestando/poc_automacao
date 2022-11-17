@@ -49,13 +49,13 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 2],
                 ['Pending', 0],
                 ['Ignored', 0],
                 ['Failing', 0],
                 ['Errors',  0],
                 ['Compromised',  0],
-                ['Untested',  1],
+                ['Untested',  0],
             ]
         ], {
             gridPadding: {top: 0, bottom: 38, left: 0, right: 0},
@@ -82,13 +82,13 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '1 requirements tested successfully'},
+                {label: '2 requirements tested successfully'},
                 {label: '0 requirements pending'},
                 {label: '0} requirements skipped'},
                 {label: '0} requirements with failures'},
                 {label: '0} requirements with errors'},
                 {label: '0} requirements compromised'},
-                {label: '1} requirements untested'},
+                {label: '0} requirements untested'},
             ]
         });
         // Results table
@@ -183,7 +183,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-11-2022 08:15</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-11-2022 09:22</span>
     <br style="clear:left"/>
 </div>
 
@@ -210,7 +210,6 @@
                                         <th>Fail&nbsp;<i class="icon-thumbs-down"></i></th>
                                         <th>Pending&nbsp;<i class="icon-calendar"></i></th>
                                         <th>Ignored&nbsp;<i class="icon-ban-circle"></i></th>
-                                            <th>Untested&nbsp;<i class="icon-question"></i></th>
                                     </tr>
                                 </head>
                                 <body>
@@ -222,24 +221,22 @@
                                         <td>0</td>
                                         <td>0</td>
                                         <td>0</td>
-                                            <td>0</td>
                                     </tr>
                                     <tr>
                                         <td class="summary-leading-column"><a
                                                 href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html">Features</a></td>
                                         <td>2</td>
-                                        <td>1</td>
+                                        <td>2</td>
                                         <td>0</td>
                                         <td>0</td>
-                                        <td>1</td>
-                                            <td>1</td>
+                                        <td>0</td>
                                     </tr>
 
                                 <tr>
                                     <td class="summary-leading-column"><a href="#test-results-table">Acceptance Criteria
                                         (tests)</a></td>
-                                    <td>1</td>
-                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>2</td>
                                     <td>0</td>
                                     <td>0</td>
                                     <td>0</td>
@@ -269,8 +266,8 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>1</td>
-            <td>1 (100%)</td>
+            <td>2</td>
+            <td>2 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
@@ -285,15 +282,15 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>1</td>
-            <td>1 (100%)</td>
+            <td>2</td>
+            <td>2 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">27 seconds</td>
+                <td colspan="5">1 minutes 52 seconds</td>
         </tr>
         </body>
     </table>
@@ -349,9 +346,9 @@
 
                         <td class="bluetext requirementRowCell">2</td>
 
-                    <td class="greentext highlighted-value requirementRowCell">1</td>
+                    <td class="greentext highlighted-value requirementRowCell">2</td>
 <!--
-                    <td class="greentext requirementRowCell">1</td>
+                    <td class="greentext requirementRowCell">2</td>
                     <td class="bluetext requirementRowCell">0</td>
                     <td class="redtext requirementRowCell">0</td>
                     <td class="lightorangetext requirementRowCell">0</td>
@@ -375,8 +372,8 @@
         </td>
         <td width="125px">
             <div class="percentagebar"
-                 title="  - Total tests: 1
-  - Passing tests: 1 (100%)
+                 title="  - Total tests: 2
+  - Passing tests: 2 (100%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
@@ -384,8 +381,8 @@
   - Ignored or skipped tests: 0 (0%)"
                  style="width: 125px;">
                 <div class="pendingbar"
-                     title="  - Total tests: 1
-  - Passing tests: 1 (100%)
+                     title="  - Total tests: 2
+  - Passing tests: 2 (100%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
@@ -394,8 +391,8 @@
                      style="width: 125px;">
                     <div class="ignoredbar"
                          style="width: 125px;"
-                         title="  - Total tests: 1
-  - Passing tests: 1 (100%)
+                         title="  - Total tests: 2
+  - Passing tests: 2 (100%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
@@ -403,8 +400,8 @@
   - Ignored or skipped tests: 0 (0%)">
                         <div class="compromisedbar"
                              style="width: 125px;"
-                             title="  - Total tests: 1
-  - Passing tests: 1 (100%)
+                             title="  - Total tests: 2
+  - Passing tests: 2 (100%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
@@ -412,8 +409,8 @@
   - Ignored or skipped tests: 0 (0%)">
                             <div class="errorbar"
                                  style="width: 125px;"
-                                 title="  - Total tests: 1
-  - Passing tests: 1 (100%)
+                                 title="  - Total tests: 2
+  - Passing tests: 2 (100%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
@@ -421,8 +418,8 @@
   - Ignored or skipped tests: 0 (0%)">
                                 <div class="failingbar"
                                      style="width: 125px;"
-                                     title="  - Total tests: 1
-  - Passing tests: 1 (100%)
+                                     title="  - Total tests: 2
+  - Passing tests: 2 (100%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
@@ -430,8 +427,8 @@
   - Ignored or skipped tests: 0 (0%)">
                                     <div class="passingbar"
                                          style="width: 125px;"
-                                         title="  - Total tests: 1
-  - Passing tests: 1 (100%)
+                                         title="  - Total tests: 2
+  - Passing tests: 2 (100%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
@@ -455,79 +452,79 @@
 <table>
     <tr>
         <td width="40px">
-            <div class="small">50%</div>
+            <div class="small">100%</div>
         </td>
         <td width="125px">
             <div class="percentagebar"
                  title="Mercanet:
-  - Passing Features: 1 (50%
+  - Passing Features: 2 (100%
   - Features Failing: 0 (0%
   - Features Failing with errors: 0
   - Compromised Features: 0
   - Pending Features: 0
   - Ignored or skipped Features: 0
-  - Untested Features: 1 (50%"
+  - Untested Features: 0 (0%"
                  style="width: 125px;">
                 <div class="pendingbar"
                      title="Mercanet:
-  - Passing Features: 1 (50%
+  - Passing Features: 2 (100%
   - Features Failing: 0 (0%
   - Features Failing with errors: 0
   - Compromised Features: 0
   - Pending Features: 0
   - Ignored or skipped Features: 0
-  - Untested Features: 1 (50%"
-                     style="width: 62px;">
+  - Untested Features: 0 (0%"
+                     style="width: 125px;">
                     <div class="ignoredbar"
-                         style="width: 62px;"
+                         style="width: 125px;"
                          title="Mercanet:
-  - Passing Features: 1 (50%
+  - Passing Features: 2 (100%
   - Features Failing: 0 (0%
   - Features Failing with errors: 0
   - Compromised Features: 0
   - Pending Features: 0
   - Ignored or skipped Features: 0
-  - Untested Features: 1 (50%">
+  - Untested Features: 0 (0%">
                         <div class="compromisedbar"
-                             style="width: 62px;"
+                             style="width: 125px;"
                              title="Mercanet:
-  - Passing Features: 1 (50%
+  - Passing Features: 2 (100%
   - Features Failing: 0 (0%
   - Features Failing with errors: 0
   - Compromised Features: 0
   - Pending Features: 0
   - Ignored or skipped Features: 0
-  - Untested Features: 1 (50%">
+  - Untested Features: 0 (0%">
                             <div class="errorbar"
-                                 style="width: 62px;"
+                                 style="width: 125px;"
                                  title="Mercanet:
-  - Passing Features: 1 (50%
+  - Passing Features: 2 (100%
   - Features Failing: 0 (0%
   - Features Failing with errors: 0
   - Compromised Features: 0
   - Pending Features: 0
   - Ignored or skipped Features: 0
-  - Untested Features: 1 (50%">
+  - Untested Features: 0 (0%">
                                 <div class="failingbar"
-                                     style="width: 62px;"
+                                     style="width: 125px;"
                                      title="Mercanet:
-  - Passing Features: 1 (50%
+  - Passing Features: 2 (100%
   - Features Failing: 0 (0%
   - Features Failing with errors: 0
   - Compromised Features: 0
   - Pending Features: 0
   - Ignored or skipped Features: 0
-  - Untested Features: 1 (50%">
+  - Untested Features: 0 (0%">
                                     <div class="passingbar"
-                                         style="width: 62px;"
+                                         style="width: 125px;"
                                          title="Mercanet:
-  - Passing Features: 1 (50%
+  - Passing Features: 2 (100%
   - Features Failing: 0 (0%
   - Features Failing with errors: 0
   - Compromised Features: 0
   - Pending Features: 0
   - Ignored or skipped Features: 0
-  - Untested Features: 1 (50%">
+  - Untested Features: 0 (0%">
                                     </div>
                                 </div>
                             </div>
@@ -587,7 +584,7 @@
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">5</td>
+                                <td class="SUCCESS-text">6</td>
 
                                     <td class="redtext">0</td>
                                     <td class="redtext">0</td>
@@ -596,9 +593,38 @@
                                     <td class="bluetext">0</td>
                                     <td class="bluetext">0</td>
 
-                                <td class="SUCCESS-text" data-sort="2022-11-16 08:15:51">08:15:51</td>
+                                <td class="SUCCESS-text" data-sort="2022-11-17 09:22:08">09:22:08</td>
 
-                                <td class="SUCCESS-text">27.43</td>
+                                <td class="SUCCESS-text">29.14</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="3b95620dd53083ad1a63a1ae2effdfdbf486b9650069109d5cd022564cfd1f87.html" class="ellipsis"
+                                           title="Realizar pedido de venda ">
+                                            Realizar pedido de venda
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="SUCCESS-text">13</td>
+
+                                    <td class="redtext">0</td>
+                                    <td class="redtext">0</td>
+                                    <td class="redtext">0</td>
+                                    <td class="bluetext">0</td>
+                                    <td class="bluetext">0</td>
+                                    <td class="bluetext">0</td>
+
+                                <td class="SUCCESS-text" data-sort="2022-11-17 09:22:38">09:22:38</td>
+
+                                <td class="SUCCESS-text">83.49</td>
                             </tr>
                         </tbody>
                     </table>
