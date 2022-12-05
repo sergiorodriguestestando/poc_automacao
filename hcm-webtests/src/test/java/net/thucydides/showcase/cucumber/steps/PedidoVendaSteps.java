@@ -125,57 +125,5 @@ public class PedidoVendaSteps {
 		pedidoPage.sairSistena(); 
 	}
 
-//	@Quando("^selecionar o botão entrar$")
-//	public void selecionar_o_botão_entrar() {
-//		pedidoPage.clicarBtnEntrar();
-//		pedidoPage.clicarMenuPrincipal();
-//		pedidoPage.clicarMenuPedido();
-//		pedidoPage.clicarSubMenuPedido();
-//		pedidoPage.frameP();
-//		
-//		boolean valor = pedidoPage.elementoEstaPresente();
-//		
-//		if (valor) {
-//			pedidoPage.clicarRascunho();
-//		}
-		
-//		pedidoPage.clicarBotaoNovo();
-//		pedidoPage.sairFrame();
-//		pedidoPage.frameS();
-//		pedidoPage.clicarLupaPesquisarCliente();
-//		pedidoPage.digitarCliente("6887668002122");
-//		pedidoPage.clicarBtnPesquisar();
-//		pedidoPage.tempos();
-//		pedidoPage.tempos();
-//		pedidoPage.tempos();
-//		pedidoPage.tempos();
-//		pedidoPage.tempos();
-//		pedidoPage.tempos();
-//		pedidoPage.tempos();
-//		pedidoPage.buscarElementos();
-//		pedidoPage.clicarBtnSelecionar();
-//		pedidoPage.tempos();
-//		pedidoPage.tempos();
-//		pedidoPage.tempos();
-//		pedidoPage.tempos();
-//		pedidoPage.tempos();
-//		pedidoPage.tempos();
-//		pedidoPage.tempos();
-//		pedidoPage.clicarListaPreco();
-//		pedidoPage.tempos();
-//		pedidoPage.tempos();
-//		pedidoPage.selecionarPreco();
-//		pedidoPage.selecionarCondicao();
-//		pedidoPage.selecionarMenuItens();
-//		pedidoPage.selecionarProduto();
-//		pedidoPage.selecionarQuantidade();
-	//	pedidoPage.selecionarBtnAtaulizar();				
-//	}
-
-//	@Então("^o Menu Principal é exibido$")
-//	public void oMenuPrincipalÉExibido() {
-//		
-//
-//	}
 
 }
