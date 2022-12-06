@@ -55,7 +55,7 @@ public class PedidoPage extends BasePage {
 	
 	
 	
-	ByXPath listaPedidosEdi = (ByXPath) By.xpath("//td[@style='border-bottom-width:0px;']");
+	ByXPath listaPedidosEdi = (ByXPath) By.xpath("//td[text()='Pedido EDI']/../../../../../../..//tr//td");
 
 	
 	
@@ -63,7 +63,7 @@ public class PedidoPage extends BasePage {
 
 	String framePrincipal = "tab--Consultas-PedidoDeVendaRedirect-aspx";
 	String frameSecundario = "tab--Cadastros-PedidoVenda-PedidoRedirect-aspx";
-	String framePedidoEdi = "tab--Consultas-EDI-ConsPedidoEDI-aspx";
+	String framePedidoEdi = "tab-perfil_2-Consultas-EDI-ConsPedidoEDI-aspx";
 	
 	
 
