@@ -191,6 +191,8 @@ public class PedidoPage extends BasePage {
 		escrever(inputPedidoEdi, pedidoEdi);
 		tempos();
 		tempos();
+		tempos();
+		tempos();
 	}
 
 

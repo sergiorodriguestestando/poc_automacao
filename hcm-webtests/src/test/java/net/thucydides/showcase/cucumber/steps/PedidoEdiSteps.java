@@ -11,7 +11,7 @@ public class PedidoEdiSteps {
 
 	PedidoPage pedidoPage;
 	LoginArquivo loginArquivo = new LoginArquivo();
-	String pedidoEdi = "950";
+	String pedidoEdi = "254720163";
 
 	@Quando("^pesquisar por um pedido edi$")
 	public void pesquisar_por_um_pedido_edi() {
