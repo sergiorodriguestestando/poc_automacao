@@ -63,7 +63,9 @@ public class PedidoPage extends BasePage {
 
 	String framePrincipal = "tab--Consultas-PedidoDeVendaRedirect-aspx";
 	String frameSecundario = "tab--Cadastros-PedidoVenda-PedidoRedirect-aspx";
-	String framePedidoEdi = "tab-perfil_2-Consultas-EDI-ConsPedidoEDI-aspx";
+	//String framePedidoEdi = "tab-perfil_2-Consultas-EDI-ConsPedidoEDI-aspx";
+	String framePedidoEdi = "tab--Consultas-EDI-ConsPedidoEDI-aspx";
+
 	
 	
 
