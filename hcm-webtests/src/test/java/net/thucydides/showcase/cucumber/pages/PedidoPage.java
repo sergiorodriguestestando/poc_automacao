@@ -228,6 +228,9 @@ public class PedidoPage extends BasePage {
 	
 	public void clicarBtnPesquisarPedidoEdi() {
 		btnPesquisaPedidoEdi.click();
+		tempos();
+		tempos();
+		tempos();
 	}
 
 	public void buscarElementos() {
